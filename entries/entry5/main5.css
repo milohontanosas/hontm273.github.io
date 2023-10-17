@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background-image {
+    position: absolute;
+    top: 30vh;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url('backgroundcutout\ Small\ copy.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    z-index: -1;
+
+}
+
+.image-container2 {
+    position: absoolute;
+    top: 10vh;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+}
+
+.small-image {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto; 
+}
+
+@keyframes floatUpDown {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.park {
+    position: absolute;
+    top: 30vh;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url('park Small.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    z-index: -1;
+    animation: floatUpDown 4s ease-in-out infinite;
+} 
+
+
+

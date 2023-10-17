@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.section {
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 5em;
+    font-family:'Girassol', sans-serif;
+    text-shadow: 5px 5px 7px rgba (0, 0, 0, 0.5);
+    background-color: #333;
+}
+
+#section1 {
+    background-image: url('https://cdn.discordapp.com/attachments/1155881440039411856/1158410927037751317/kindergarten.jpeg?ex=651c25bf&is=651ad43f&hm=3a8e49f1eeeb493baf41b8e9d0bd5e317fbb257093385b4c5c7b371f0ee76fa0&');
+    background-size: cover;
+    background-position: center;
+}
+
+#section2 {
+    background-image: url('https://cdn.discordapp.com/attachments/1155881440039411856/1158410973082828872/1stgrade.jpeg?ex=651c25ca&is=651ad44a&hm=8a1eda651fffdc64eb5c9a514d788c2fe755ba6eb5c347733ed3bbe5e91d2aac&');
+    background-size: cover;
+    background-position: center;
+}
+
+#section3 {
+    background-image: url('https://cdn.discordapp.com/attachments/1155881440039411856/1158416529277333574/2ndgrade.jpeg?ex=651c2af6&is=651ad976&hm=ff7b11c35a9217b6e044191c1cc1bcb2742b844bb2f476ad11ec90daa4562994&');
+    background-size: cover;
+    background-position: center;
+}
+
+#section4 {
+    background-image: url('https://cdn.discordapp.com/attachments/1155881440039411856/1158416529805824112/3rdgrade.jpeg?ex=651c2af7&is=651ad977&hm=14ebcdc093e7ada25165b1ec745a085da37a90ffdcfbe9a314b9fa8afbb0aeed&');
+    background-size: cover;
+    background-position: center;
+}
+
+#section5 {
+    background-image: url('https://cdn.discordapp.com/attachments/1155881440039411856/1158416530451738655/4thgrade.jpeg?ex=651c2af7&is=651ad977&hm=c56dc501d2f559d894e6b4afb58abfb68923c83b171191124a41a6949469466d&');
+    background-size: cover;
+    background-position: center;
+}
+
+#section6 {
+    background-image: url('https://cdn.discordapp.com/attachments/1155881440039411856/1158416531009589258/5thgrade.jpeg?ex=651c2af7&is=651ad977&hm=2c3a8af77f7b88eb1ce7eeaee0497924bae09c8a9a455b72866e083e787df254&');
+    background-size: cover;
+    background-position: center;
+}
+
+#section7 {
+    background-image: url('https://cdn.discordapp.com/attachments/1155881440039411856/1158416531580006470/6thgrade.jpeg?ex=651c2af7&is=651ad977&hm=0342f0d0c4f7d3208fb5da860923e0708a54a9239db8840c8ed4610206d3cfbb&');
+    background-size: cover;
+    background-position: center;
+}
+
+#section8 {
+    background-image: url('https://cdn.discordapp.com/attachments/1155881440039411856/1158416531932336230/7thgrade.jpeg?ex=651c2af7&is=651ad977&hm=db068da76fd1d6b99a26a0958662a87b1c697abe01c6f4a728f0b24d9cff42b2&');
+    background-size: cover;
+    background-position: center;
+}
+
+#section9 {
+    background-image: url('https://cdn.discordapp.com/attachments/1155881440039411856/1158416532737638420/8thgrade.jpeg?ex=651c2af7&is=651ad977&hm=653eaae7516bd6e73d4939ac2fd0a09fd637501f6b028bf4afd39a246f5947b8&');
+    background-size: cover;
+    background-position: center;
+}
+
+#section1, #section2, #section3, #section4, #section5, #section6, #section7, #section8, #section9 {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@font-face {
+    font-family:'Girassol';
+    src: url('/Users/maeganhontanosas/Documents/GitHub/hontm273.github.io/entries/entry3/Girassol/Girassol-Regular.ttf');
+}
