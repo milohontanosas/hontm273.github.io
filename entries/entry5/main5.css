@@ -5,6 +5,13 @@ body {
     background-color: black;
 }
 
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 36px; 
+    color: white; 
+    text-align: center; 
+}
+
 
 .image-container {
     position: relative;
@@ -28,7 +35,7 @@ body {
 }
 
 .image-container2 {
-    position: absoolute;
+    position: absolute;
     top: 10vh;
     left: 0;
     width: 100%;

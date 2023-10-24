@@ -1,26 +1,37 @@
 body {
-    background: linear-gradient(to bottom, #fff, #f7f0ff, #ccccff, #6e75de), url('https://cdn.discordapp.com/attachments/1155881440039411856/1158648997343395900/A9093147-CA60-4962-8A0C-DE89105B20BD.jpeg?ex=651d0377&is=651bb1f7&hm=48972198dd494e2fa5bcdb2a691da8dd88e3eab63cbf28b7a23babab4e947db8&');
-    background-size: cover, auto;
-    background-position: top, bottom; 
-    background-repeat: no-repeat, repeat;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    background-image: url('photostrip\ Large.png');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(35, 64, 28);
 }
 
-.container {
-    text-align: center;
-    color: #fff;
+.postits {
+    margin-top: 120px; 
+    margin-bottom: 120px; 
+    text-align: center; 
+    position: relative; 
+    display: inline-block; 
+    transition: transform 0.3s; 
 }
 
-h1 {
-    font-size: 4em;
-    background: linear-gradient(to bottom, #ffcc00, #ff6600);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    margin: 0;
+
+.postit img.postit1:hover {
+    transform: scale(2.2); 
+    transform-origin: top left; 
+}
+
+.postit img.postit2:hover {
+    transform: scale(2.2); 
+    transform-origin: top right; 
+}
+
+.postit img.postit3:hover {
+    transform: scale(2.2); 
+    transform-origin: bottom left; 
+}
+
+.postit img.postit4:hover {
+    transform: scale(2.2); 
+    transform-origin: bottom right; 
 }

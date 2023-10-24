@@ -10,6 +10,7 @@ body {
     height: 100vh;
     text-align: center;
     display: flex;
+    flex-direction: column; 
     justify-content: center;
     align-items: center;
     color: rgb(240, 225, 208);
@@ -22,6 +23,32 @@ body {
     z-index: 1;
 }
 
+.content {
+    font-family: "alfarn-roman", sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    color: rgb(35, 64, 28);
+    font-size: 24px; 
+    position: relative; 
+    z-index: 2;
+    background: rgba (255, 255, 255, 0.7);
+    padding: 20px;
+}
+
+p {
+    font-family: "alfarn", sans-serif;
+    color: #FECB00; 
+    -webkit-text-stroke: 2px black;
+    font-size: 24px; 
+    flex-direction: column; 
+}
+
+.content p {
+    margin-top: -200px; 
+}
 #section1 {
     background-image: url('https://cdn.discordapp.com/attachments/1155881440039411856/1158410927037751317/kindergarten.jpeg?ex=651c25bf&is=651ad43f&hm=3a8e49f1eeeb493baf41b8e9d0bd5e317fbb257093385b4c5c7b371f0ee76fa0&');
     background-size: cover;
@@ -93,4 +120,5 @@ body {
     font-family:'Girassol';
     src: url('/Users/maeganhontanosas/Documents/GitHub/hontm273.github.io/entries/entry3/Girassol/Girassol-Regular.ttf');
 }
+
 
