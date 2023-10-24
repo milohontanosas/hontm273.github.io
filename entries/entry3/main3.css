@@ -2,19 +2,24 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    position: relative; 
 }
 
 .section {
+    padding: 0 20px;
     height: 100vh;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
+    color: rgb(240, 225, 208);
     font-size: 5em;
     font-family:'Girassol', sans-serif;
     text-shadow: 5px 5px 7px rgba (0, 0, 0, 0.5);
-    background-color: #333;
+    border: 20px solid rgb(240,225,208); 
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
 }
 
 #section1 {
@@ -88,3 +93,4 @@ body {
     font-family:'Girassol';
     src: url('/Users/maeganhontanosas/Documents/GitHub/hontm273.github.io/entries/entry3/Girassol/Girassol-Regular.ttf');
 }
+
