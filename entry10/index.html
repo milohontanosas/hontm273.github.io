@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Cemetary</title>
+</head>
+<body>
+    <div class="ticker-tape">
+        <div class="ticker">
+            <div class="ticker__item">the cemetary</div>
+            <div class="ticker__item">the cemetary</div>
+            <div class="ticker__item">the cemetary</div>
+            <div class="ticker__item">the cemetary</div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="header">
+            <img src="Home.png" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#"></a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div id="main">
+        <!--<button onclick="myFunction()">....Click Here....</button>-->
+    <script>
+       function testHere() {
+            //document.body.style.backgroundColor = "green"
+           console.log("initial image is " + document.body.style.image)
+
+      }
+        function clickHere() {
+            //document.body.style.backgroundColor = "green"
+            for (let i = 0; i < 3; i++) { 
+                console.log("i is " + i);
+                console.log("initial is " + document.body.style.backgroundImage);
+                if (document.body.style.backgroundImage == "" || document.body.style.backgroundImage.includes("cemetary.png")) {
+                    console.log("if equals to blank or cemetary set to gif");
+                    document.body.style.backgroundImage = "url('entry10gif.gif')"; 
+                } else if (document.body.style.backgroundImage.includes("entry10gif.gif")) {
+                    console.log("if equals gif set to cemetary");
+                    document.body.style.backgroundImage = "url('cemetary.png')";   
+                } 
+                }
+            }
+        </script>
+    <button id="my-button" onclick="clickHere()">Start Again</button>
+    </div>
+    <div id="my-div"></div>
+    </div>
+</body>
+</html>
+ 
