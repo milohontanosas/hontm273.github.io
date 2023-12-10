@@ -15,6 +15,21 @@ body {
     overflow-y: scroll; 
 }
 
+.header {
+    background-color: black;
+    display: flex;
+    align-items: center; 
+}
+
+.header nav ul {
+    list-style: none; 
+    display: flex;
+    margin-left: -80px; 
+}
+.header nav ul li {
+    margin: -10px; 
+}
+
 :root {
     --height: 100px;
     --speed: 15s;
@@ -34,7 +49,7 @@ body {
     position: relative;
     z-index: 1;
     position: absolute; 
-    left: 0;
+    left: 100px;
     right: 0;
 }
 
@@ -54,6 +69,11 @@ body {
     animation-timing-function: linear;
     animation-name: ticker; 
     animation-duration: var(--speed);
+}
+
+.container {
+    position: relative;
+    z-index: 0;
 }
 
 .ticker-tape .ticker__item {
@@ -87,11 +107,9 @@ body {
 }
 
 .header {
-    padding: 10px 10px;
-    padding-bottom: 0px;
-    padding-top: 0px; 
     background: black; 
-    color: white; 
+    display: flex;
+    align-items: center; 
 }
 
 .content {
@@ -138,6 +156,10 @@ body {
     padding: 10px; 
     height: 50px; 
 }
+
+
+
+
 
 
 
