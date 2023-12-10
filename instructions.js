@@ -1,39 +1,60 @@
-// Get the container for instructions
-const instructionsContainer = document.getElementById('instructions-container');
+document.addEventListener('DOMContentLoaded', function() {
 
-// 1. Wake up at 6:50 am
-const wakeUpTime = '6:50 AM';
-instructionsContainer.innerHTML += `<p>1. Wake up at ${wakeUpTime}</p>`;
-
-// 2. Brush teeth
-instructionsContainer.innerHTML += '<p>2. Brush teeth</p>';
-
-// 3. Change clothes
-instructionsContainer.innerHTML += '<p>3. Change clothes</p>';
-
-// 4. Gather books and clothes
-instructionsContainer.innerHTML += '<p>4. Gather books and clothes</p>';
-
-// 5. Leave house by 6:30
-const leaveHouseTime = '6:30 AM';
-instructionsContainer.innerHTML += `<p>5. Leave house by ${leaveHouseTime}</p>`;
-
-// 6. Drop off little sister to bus stop
-instructionsContainer.innerHTML += '<p>6. Drop off little sister to bus stop</p>';
-
-// 7. Drive to the cemetery
-instructionsContainer.innerHTML += '<p>7. Drive to the cemetery</p>';
-
-// 8. Talk and pray
-instructionsContainer.innerHTML += '<p>8. Talk and pray</p>';
-
-// 9. Leave by 7:10
-const leaveCemeteryTime = '7:10 AM';
-instructionsContainer.innerHTML += `<p>9. Leave by ${leaveCemeteryTime}</p>`;
-
-// 10. Head to the train station
-instructionsContainer.innerHTML += '<p>10. Head to the train station</p>';
-
-// 11. Go to class by 9 am
-const classTime = '9:00 AM';
-instructionsContainer.innerHTML += `<p>11. Go to class by ${classTime}</p>`;
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function() {myFunction()};
+    
+    // Get the header
+    var header = document.querySelector("Header");
+    
+    // Get the offset position of the navbar
+    var sticky = header.offsetTop;
+    
+    // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+    
+    function setTickerWidth() {
+        const tikerTape = document.getElementById('ticker-tape');
+        tickerTape.style.width = window.innerWidth + 'px';
+    }
+    
+    setTickerWidth();
+    
+    window.addEventListener('resize', setTickerWidth);
+    
+    function myFunctions() {
+    //    document.getElementById("myDIV").style.backgroundImage = "url(pack.png)";
+        document.body.style.backgroundImage = "url(pack.png)";
+    }
+    
+    function clickHere() {
+        document.getElementById("my-div").style.backgroundColor = "green";
+    }
+    
+    //1. make header// 
+    //2. make home icon//
+    //3. make ticker// hpu
+    //4. make center button reading click here// 
+    //5. make center button function so that it changes words when clicked on//
+    //6. make background images change when words are clicked on//
+    //7. make page blur in and out when mouse is on header vs body//
+    //8. make mouse a blur //
+    
+    
+    //1. 5:50am wake up//
+    //2. 5:55am pack and get ready//
+    //3. 6:30am drop off sister //
+    //4. 6:45 cemetary //
+    //5. 7:15 nj transit //
+    //6. 8:10 drop things off apartment //
+    //7. 8:30 leave for school // 
+    //8. 9:00 class // 
+    
+    }); 
+    
+    
