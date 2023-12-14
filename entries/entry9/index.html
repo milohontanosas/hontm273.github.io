@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<title>the autumn</title>
+</head>
+<body>
+	<div class="ticker-tape">
+        <div class="ticker">
+            <div class="ticker__item">the autumn</div>
+            <div class="ticker__item">the autumn</div>
+            <div class="ticker__item">the autumn</div>
+            <div class="ticker__item">the autumn</div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="header">
+            <a href="https://milohontanosas.github.io/hontm273.github.io/homepage/index.html"><img src="Home.png" class="logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="https://milohontanosas.github.io/hontm273.github.io/homepage/index.html">HOME</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+	<div class="main">
+        <section class="hidden">
+            <img src="baby.jpeg" alt="">
+        </section>
+        <section class="hidden">
+            <img src="bike Small.jpeg" alt="">
+        </section>
+        <section class="hidden">
+            <img src="dragonhead Small.jpeg" alt="">
+        </section>
+        <section class="hidden">
+            <img src="tree Small.jpeg" alt="">
+        </section>
+    </div>
+    <script> const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            console.log(entry)
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+            } else {
+                entry.target.classList.remove('show');
+            }
+        });
+    });
+
+    const hiddenElements = document.querySelectorAll('.hidden');
+    hiddenElements.forEach((el) => observer.observe(el));</script>
+</body>
+</html>
